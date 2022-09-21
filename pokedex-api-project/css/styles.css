@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+html{
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    
+}
+
+body {
+    background: linear-gradient(to right, purple, red);
+    font-family: 'Indie Flower', cursive;
+    
+}
+h1 {
+    letter-spacing: 3px;
+}
+a {
+    margin-top: 3rem;
+}
+a img {
+    margin: auto;
+    display: block;
+}
+.name-container {
+    color: rgb(34, 5, 45);
+}
+/* SEARCH BAR ---------------------- */
+
+.search {
+    background-color: rgba(255, 255, 255, 0.6);
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid rgb(227, 138, 227);
+    border-radius: 20px;
+    width: 300px;
+    box-shadow: 0px 1px 2px darkred;
+
+}
+.search::placeholder { 
+    text-align: center;
+    color: yellow;
+    letter-spacing: 2px;
+    font-size: large;
+}
+.search:focus{
+    outline:none ;
+}
+
+
+/* POKEMON ---------------------- */
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.poke-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-between;
+    justify-content: center;
+    margin: 0 auto;
+    max-height: 80%;
+    max-width: 75%;
+}
+
+.pokemon {
+    background-image: linear-gradient(135deg, orange 40%, pink );
+
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(100,100,100,0.5);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    
+}
+.pokemon:hover{
+    animation: bounce 0.5s linear;
+    cursor: pointer;
+}
+@keyframes bounce {
+    20%{
+        transform: translateY(-8px);
+    }
+    40%{
+        transform: translateY(0px);
+    }
+    60%{
+        transform: translateY(-4px);
+    }
+    80%{
+        transform: translateY(0px);
+    }
+}
+
+.pokemon .name-container .number {
+    padding: 5px 10px;
+    border: 10px;
+    font-size: 1.3em;
+}
+/* POPUP ---------------------- */
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f4f4f4;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup img{
+    height: 255px;
+    width: 255px;
+} 
+.popup h3{
+    font-size: 50px;
+    align-items: center;
+    letter-spacing: 3px;
+
+}
+.popup p{
+    font-size: 25px;
+    align-items: center;
+    letter-spacing: 2px;
+
+}
+.popup span{
+    font-size: 20px;
+}
+/* BUTTON ---------------------- */
+
+#closeBtn {
+    position : absolute;
+    top: 20px;
+    right: 20px;
+  }
+button {
+    background-color: orangered;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    transition: transform 100ms;
+}
+button:hover {
+    cursor: pointer;
+    transform: translateY(-1px);
+    box-shadow: 0px 1px 2px darkred;
+}
+/* STATS ---------------------- */
+.popup .stats {
+    
+    text-align: center;
+    margin: auto;
+}
+
+/* AUTO SUGGESTION ---------------------- */
+
+  
+ul {
+list-style-type: none;
+padding: 0;
+margin: 0;
+/* box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2); */
+max-height: 150px;
+overflow-y: scroll;
+
+}
+ul li {
+padding: 10px;
+cursor: pointer;
+background-color: rgba(255, 105, 180, 0.8);
+border: 2px solid rgb(227, 138, 227);
+border-radius: 10px;
+width: 300px;
+
+}
+ul li:hover {
+background-color: #e65c00;
+color: white;
+
+}
+ul::-webkit-scrollbar { /* Chrome, Safari and Opera */
+    display: none;
+  }
+
+ul{
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
+
+
+
