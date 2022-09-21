@@ -14,11 +14,13 @@ or
 
 download the folder as zip and extract the files.
 
-#### Click on index.html 
+#### Then
+
+Click on index.html 
 
 or 
 
-#### Open in VSCode and open with live server
+Open in VSCode and open with live server
 
 
 ## Author
