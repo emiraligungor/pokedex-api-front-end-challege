@@ -8,7 +8,7 @@ Pokédex is an device that allows you to search for Pokémon. For more informati
 
 ## Run instructions
 #### Clone this repository
-git clone https://github.com/emiraligungor/pokedex-api-front-end-challege
+git clone https://github.com/emiraligungor/pokedex-api-front-end-challenge
 
 or 
 
