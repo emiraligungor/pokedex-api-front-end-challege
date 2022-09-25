@@ -7,6 +7,12 @@ Pokédex is an device that allows you to search for Pokémon. For more informati
 
 
 ## Run instructions
+
+#### Click on this website
+https://pokedex-app-eag.netlify.app
+
+or
+
 #### Clone this repository
 git clone https://github.com/emiraligungor/pokedex-api-front-end-challenge
 
